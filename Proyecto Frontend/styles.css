@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f6f1;
+}
+
+.top-bar {
+    background-color: #9da48f;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.top-bar a {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #fdfaf4;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero {
+    display: flex;
+    padding: 20px;
+    background-color: #d3d8c5;
+}
+
+.menu {
+    flex: 1;
+    padding: 20px;
+    background-color: #fdfaf4;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px 0;
+}
+
+.hero-content {
+    flex: 2;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 24px;
+}
+
+.hero-content button {
+    background-color: #e47d5d;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.flash-sales {
+    text-align: center;
+    padding: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #f5e9d7;
+    padding: 10px;
+    border-radius: 8px;
+    width: 180px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #6d7b69;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 5px;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Login Page */
+.login-container {
+    display: flex;
+    background-color: #fdfaf4;
+    padding: 50px;
+}
+
+.login-form {
+    padding: 30px;
+    background-color: #fff9ed;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.login-form button {
+    background-color: #e47d5d;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-form a {
+    color: #e47d5d;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Contact Page */
+.contact-container {
+    display: flex;
+    gap: 40px;
+    padding: 50px;
+    background-color: #fffaf0;
+    flex-wrap: wrap;
+}
+
+.contact-box, .form-box {
+    flex: 1;
+    background-color: #fdfaf4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.contact-box h3 {
+    font-size: 18px;
+    color: #e47d5d;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.form-box input,
+.form-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff3dc;
+}
+
+.form-box button {
+    background-color: #e47d5d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero,
+    .contact-container,
+    .login-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
