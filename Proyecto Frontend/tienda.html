@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda - Orígenes</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Barra superior -->
+    <div class="top-bar">
+        Envío gratuito en pedidos superiores a $100.000 <a href="#">Comprar ahora</a>
+    </div>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Colecciones</a></li>
+            <li><a href="#">Nuestra Historia</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="icon"><a href="#">👤</a></li>
+            <li class="icon"><a href="#">🛒</a></li>
+        </ul>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section style="padding: 20px;">
+        <p style="font-size: 14px; color: #666;">Home / <strong>Tienda</strong></p>
+    </section>
+
+    <!-- Contenido de la tienda -->
+    <section style="padding: 20px; max-width: 1200px; margin: 0 auto;">
+        <h1>Nuestra Tienda</h1>
+        
+        <!-- Filtros básicos -->
+        <div style="display: flex; justify-content: space-between; margin-bottom: 20px; flex-wrap: wrap;">
+            <div>
+                <label>Categoría:</label>
+                <select style="padding: 8px; margin-left: 5px;">
+                    <option>Todas las categorías</option>
+                    <option>Anillos</option>
+                    <option>Collares</option>
+                    <option>Pulseras</option>
+                </select>
+            </div>
+            
+            <div>
+                <input type="text" placeholder="Buscar productos..." style="padding: 8px; width: 200px;">
+            </div>
+        </div>
+        
+        <!-- Productos -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
+            <!-- Producto 1 -->
+            <div style="background-color: #fdfaf4; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <div style="height: 200px; background-color: #f5e9d7; display: flex; align-items: center; justify-content: center; font-size: 40px;">💍</div>
+                <div style="padding: 15px;">
+                    <div style="font-weight: bold;">Anillo Esmeralda</div>
+                    <div style="color: #e47d5d; font-weight: bold; margin: 5px 0;">$250.000</div>
+                    <div style="font-size: 14px; color: #666; margin-bottom: 10px;">Elegante anillo con esmeralda colombiana.</div>
+                    <button style="background-color: #e47d5d; color: white; border: none; padding: 8px 15px; width: 100%; cursor: pointer;">Añadir al carrito</button>
+                </div>
+            </div>
+            
+            <!-- Producto 2 -->
+            <div style="background-color: #fdfaf4; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <div style="height: 200px; background-color: #f5e9d7; display: flex; align-items: center; justify-content: center; font-size: 40px;">📿</div>
+                <div style="padding: 15px;">
+                    <div style="font-weight: bold;">Collar Ancestral</div>
+                    <div style="color: #e47d5d; font-weight: bold; margin: 5px 0;">$180.000</div>
+                    <div style="font-size: 14px; color: #666; margin-bottom: 10px;">Collar inspirado en diseños precolombinos.</div>
+                    <button style="background-color: #e47d5d; color: white; border: none; padding: 8px 15px; width: 100%; cursor: pointer;">Añadir al carrito</button>
+                </div>
+            </div>
+            
+            <!-- Producto 3 -->
+            <div style="background-color: #fdfaf4; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <div style="height: 200px; background-color: #f5e9d7; display: flex; align-items: center; justify-content: center; font-size: 40px;">⚜️</div>
+                <div style="padding: 15px;">
+                    <div style="font-weight: bold;">Brazalete Floral</div>
+                    <div style="color: #e47d5d; font-weight: bold; margin: 5px 0;">$120.000</div>
+                    <div style="font-size: 14px; color: #666; margin-bottom: 10px;">Brazalete ajustable con motivos florales.</div>
+                    <button style="background-color: #e47d5d; color: white; border: none; padding: 8px 15px; width: 100%; cursor: pointer;">Añadir al carrito</button>
+                </div>
+            </div>
+            
+            <!-- Producto 4 -->
+            <div style="background-color: #fdfaf4; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                <div style="height: 200px; background-color: #f5e9d7; display: flex; align-items: center; justify-content: center; font-size: 40px;">🔔</div>
+                <div style="padding: 15px;">
+                    <div style="font-weight: bold;">Aretes Cascada</div>
+                    <div style="color: #e47d5d; font-weight: bold; margin: 5px 0;">$95.000</div>
+                    <div style="font-size: 14px; color: #666; margin-bottom: 10px;">Aretes largos con diseño en cascada.</div>
+                    <button style="background-color: #e47d5d; color: white; border: none; padding: 8px 15px; width: 100%; cursor: pointer;">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h2>Orígenes</h2>
+            <p>Bogotá, Colombia</p>
+            <p>origenes@gmail.com</p>
+            <p>+57 304 6484418</p>
+        </div>
+        <div class="footer-section">
+            <h2>Más información</h2>
+            <ul>
+                <li><a href="#">Políticas de privacidad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Síguenos en</h2>
+            <div class="social-icons">
+                <a href="#">📘</a>
+                <a href="#">📷</a>
+                <a href="#">🔗</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Créditos -->
+    <div style="text-align: center; padding: 10px; background-color: #6d7b69; color: white;">
+        © Todos los derechos reservados 2025
+    </div>
+</body>
+</html>
