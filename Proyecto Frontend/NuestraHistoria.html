@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuestra Historia - Orígenes</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .historia-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .historia-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .historia-header h1 {
+            color: #6d7b69;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .historia-header p {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .timeline {
+            position: relative;
+            margin: 50px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: #e47d5d;
+        }
+        
+        .timeline-item {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 30px;
+            position: relative;
+            margin-bottom: 50px;
+            width: 50%;
+        }
+        
+        .timeline-item:nth-child(even) {
+            align-self: flex-end;
+            justify-content: flex-start;
+            padding-left: 30px;
+            padding-right: 0;
+            margin-left: 50%;
+        }
+        
+        .timeline-content {
+            background: #fdfaf4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            right: -10px;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            background: #e47d5d;
+            border-radius: 50%;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content::after {
+            left: -10px;
+            right: auto;
+        }
+        
+        .timeline-year {
+            color: #e47d5d;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .timeline-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #6d7b69;
+        }
+        
+        .valores {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 50px 0;
+        }
+        
+        .valor-card {
+            flex: 0 0 30%;
+            background: #fdfaf4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .valor-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #e47d5d;
+        }
+        
+        .equipo {
+            margin: 50px 0;
+            text-align: center;
+        }
+        
+        .equipo h2 {
+            color: #6d7b69;
+            margin-bottom: 30px;
+        }
+        
+        .equipo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .miembro {
+            flex: 0 0 200px;
+            text-align: center;
+        }
+        
+        .miembro-foto {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #f5e9d7;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+        }
+        
+        .miembro-nombre {
+            font-weight: bold;
+            color: #6d7b69;
+        }
+        
+        .miembro-cargo {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-item,
+            .timeline-item:nth-child(even) {
+                width: 100%;
+                padding-right: 0;
+                padding-left: 50px;
+                margin-left: 0;
+            }
+            
+            .timeline-content::after,
+            .timeline-item:nth-child(even) .timeline-content::after {
+                left: -30px;
+                right: auto;
+            }
+            
+            .valor-card {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra superior -->
+    <div class="top-bar">
+        Envío gratuito en pedidos superiores a $100.000 <a href="#">Comprar ahora</a>
+    </div>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="colecciones.html">Colecciones</a></li>
+            <li><a href="NuestraHistoria.html">Nuestra Historia</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="icon"><a href="#">👤</a></li>
+            <li class="icon"><a href="#">🛒</a></li>
+        </ul>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section style="padding: 20px;">
+        <p style="font-size: 14px; color: #666;">Home / <strong>Nuestra Historia</strong></p>
+    </section>
+
+    <!-- Contenido de Nuestra Historia -->
+    <div class="historia-container">
+        <div class="historia-header">
+            <h1>Nuestra Historia</h1>
+            <p>Tradición, artesanía y pasión por la joyería colombiana</p>
+        </div>
+        
+        <p>Orígenes nació de la pasión por preservar y difundir la rica tradición joyera de Colombia. Nuestra historia es un viaje a través del tiempo, conectando las técnicas ancestrales con diseños contemporáneos que celebran nuestra identidad cultural.</p>
+        
+        <!-- Línea de tiempo -->
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">2010</div>
+                    <div class="timeline-title">Los inicios</div>
+                    <p>Fundada por María Rodríguez, artesana de tercera generación, Orígenes comenzó como un pequeño taller en el centro histórico de Bogotá, dedicado a rescatar técnicas tradicionales de orfebrería.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">2013</div>
+                    <div class="timeline-title">Primera colección</div>
+                    <p>Lanzamos "Raíces", nuestra primera colección inspirada en motivos precolombinos, que rápidamente captó la atención de coleccionistas y amantes de la joyería artesanal.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">2016</div>
+                    <div class="timeline-title">Expansión nacional</div>
+                    <p>Abrimos nuestra primera tienda física en el centro comercial Andino de Bogotá, llevando nuestras creaciones a un público más amplio y estableciendo colaboraciones con artesanos de diferentes regiones del país.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">2019</div>
+                    <div class="timeline-title">Reconocimiento internacional</div>
+                    <p>Participamos en la Feria Internacional de Joyería de Milán, donde nuestras piezas elaboradas con esmeraldas colombianas recibieron reconocimiento por su calidad y diseño único.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-title">Compromiso sostenible</div>
+                    <p>Implementamos prácticas de comercio justo y sostenibilidad en toda nuestra cadena de producción, garantizando el origen ético de nuestros materiales y el bienestar de nuestros artesanos.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-year">Hoy</div>
+                    <div class="timeline-title">Mirando al futuro</div>
+                    <p>Continuamos innovando mientras honramos nuestras raíces, combinando técnicas tradicionales con tecnologías modernas para crear joyas que cuentan historias y preservan nuestro patrimonio cultural.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Nuestros valores -->
+        <h2 style="text-align: center; color: #6d7b69; margin: 40px 0 20px;">Nuestros Valores</h2>
+        
+        <div class="valores">
+            <div class="valor-card">
+                <div class="valor-icon">🌿</div>
+                <h3>Sostenibilidad</h3>
+                <p>Utilizamos materiales de origen ético y prácticas responsables con el medio ambiente en todos nuestros procesos.</p>
+            </div>
+            
+            <div class="valor-card">
+                <div class="valor-icon">🤝</div>
+                <h3>Comercio Justo</h3>
+                <p>Trabajamos directamente con artesanos locales, asegurando condiciones laborales dignas y remuneración justa.</p>
+            </div>
+            
+            <div class="valor-card">
+                <div class="valor-icon">🔍</div>
+                <h3>Autenticidad</h3>
+                <p>Cada pieza refleja nuestra herencia cultural y está elaborada con atención al detalle y materiales de la más alta calidad.</p>
+            </div>
+        </div>
+        
+        <!-- Nuestro equipo -->
+        <div class="equipo">
+            <h2>Nuestro Equipo</h2>
+            
+            <div class="equipo-grid">
+                <div class="miembro">
+                    <div class="miembro-foto">👩</div>
+                    <div class="miembro-nombre">María Rodríguez</div>
+                    <div class="miembro-cargo">Fundadora y Directora Creativa</div>
+                    <p>Artesana de tercera generación con más de 20 años de experiencia en joyería tradicional.</p>
+                </div>
+                
+                <div class="miembro">
+                    <div class="miembro-foto">👨</div>
+                    <div class="miembro-nombre">Carlos Mendoza</div>
+                    <div class="miembro-cargo">Maestro Orfebre</div>
+                    <p>Especialista en técnicas ancestrales de filigrana y trabajo con metales preciosos.</p>
+                </div>
+                
+                <div class="miembro">
+                    <div class="miembro-foto">👩</div>
+                    <div class="miembro-nombre">Laura Gómez</div>
+                    <div class="miembro-cargo">Diseñadora</div>
+                    <p>Combina elementos tradicionales con tendencias contemporáneas para crear piezas únicas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h2>Orígenes</h2>
+            <p>Bogotá, Colombia</p>
+            <p>origenes@gmail.com</p>
+            <p>+57 304 6484418</p>
+        </div>
+        <div class="footer-section">
+            <h2>Más información</h2>
+            <ul>
+                <li><a href="#">Políticas de privacidad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Síguenos en</h2>
+            <div class="social-icons">
+                <a href="#">📘</a>
+                <a href="#">📷</a>
+                <a href="#">🔗</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Créditos -->
+    <div style="text-align: center; padding: 10px; background-color: #6d7b69; color: white;">
+        © Todos los derechos reservados 2025
+    </div>
+</body>
+</html>
