@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Colecciones - Orígenes</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .colecciones-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .colecciones-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .colecciones-header h1 {
+            color: #6d7b69;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .colecciones-header p {
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .coleccion {
+            margin-bottom: 80px;
+        }
+        
+        .coleccion-info {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .coleccion-texto {
+            flex: 1;
+            padding: 20px;
+            min-width: 300px;
+        }
+        
+        .coleccion-imagen {
+            flex: 1;
+            min-width: 300px;
+            height: 350px;
+            background-color: #f5e9d7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+        }
+        
+        .coleccion:nth-child(even) .coleccion-info {
+            flex-direction: row-reverse;
+        }
+        
+        .coleccion h2 {
+            color: #e47d5d;
+            margin-bottom: 15px;
+        }
+        
+        .coleccion-descripcion {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .coleccion-btn {
+            display: inline-block;
+            background-color: #e47d5d;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        
+        .productos-destacados {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        
+        .producto-card {
+            background-color: #fdfaf4;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .producto-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .producto-imagen {
+            height: 180px;
+            background-color: #f5e9d7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+        
+        .producto-info {
+            padding: 15px;
+        }
+        
+        .producto-nombre {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .producto-precio {
+            color: #e47d5d;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .ver-mas {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .ver-mas a {
+            display: inline-block;
+            background-color: #6d7b69;
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .coleccion-info, 
+            .coleccion:nth-child(even) .coleccion-info {
+                flex-direction: column;
+            }
+            
+            .coleccion-imagen {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra superior -->
+    <div class="top-bar">
+        Envío gratuito en pedidos superiores a $100.000 <a href="#">Comprar ahora</a>
+    </div>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="colecciones.html">Colecciones</a></li>
+            <li><a href="NuestraHistoria.html">Nuestra Historia</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="icon"><a href="#">👤</a></li>
+            <li class="icon"><a href="#">🛒</a></li>
+        </ul>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section style="padding: 20px;">
+        <p style="font-size: 14px; color: #666;">Home / <strong>Colecciones</strong></p>
+    </section>
+
+    <!-- Contenido de Colecciones -->
+    <div class="colecciones-container">
+        <div class="colecciones-header">
+            <h1>Nuestras Colecciones</h1>
+            <p>Descubre nuestras exclusivas líneas de joyería, cada una con su propia historia y significado, inspiradas en la rica cultura y naturaleza colombiana.</p>
+        </div>
+        
+        <!-- Colección 1 -->
+        <div class="coleccion">
+            <div class="coleccion-info">
+                <div class="coleccion-texto">
+                    <h2>Colección Esmeralda</h2>
+                    <div class="coleccion-descripcion">
+                        <p>Nuestra colección insignia, inspirada en la piedra preciosa más emblemática de Colombia. Cada pieza está diseñada para resaltar la belleza natural de las esmeraldas, combinadas con metales preciosos trabajados a mano por nuestros artesanos.</p>
+                        <p>Las esmeraldas colombianas son reconocidas mundialmente por su color y pureza excepcionales, y en esta colección celebramos su esplendor con diseños contemporáneos que honran nuestra tradición.</p>
+                    </div>
+                    <a href="#" class="coleccion-btn">Ver colección completa</a>
+                </div>
+                <div class="coleccion-imagen">💎</div>
+            </div>
+            
+            <h3 style="margin-bottom: 20px;">Productos destacados</h3>
+            <div class="productos-destacados">
+                <div class="producto-card">
+                    <div class="producto-imagen">💍</div>
+                    <div class="producto-info">
+                        <div class="producto-nombre">Anillo Esmeralda Real</div>
+                        <div class="producto-precio">$350.000</div>
+                        <a href="#" class="coleccion-btn" style="font-size: 14px; padding: 8px 15px;">Ver detalles</a>
+                    </div>
+                </div>
+                
+                <div class="producto-card">
+                    <div class="producto-imagen">📿</div>
+                    <div class="producto-info">
+                        <div class="producto-nombre">Collar Gota Esmeralda</div>
+                        <div class="producto-precio">$280.000</div>
+                        <a href="#" class="coleccion-btn" style="font-size: 14px; padding: 8px 15px;">Ver detalles</a>
+                    </div>
+                </div>
+                
+                <div class="producto-card">
+                    <div class="producto-imagen">👂</div>
+                    <div class="producto-info">
+                        <div class="producto-nombre">Aretes Esmeralda</div>
+                        <div class="producto-precio">$220.000</div>
+                        <a href="#" class="coleccion-btn" style="font-size: 14px; padding: 8px 15px;">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Colección 2 -->
+        <div class="coleccion">
+            <div class="coleccion-info">
+                <div class="coleccion-texto">
+                    <h2>Colección Ancestral</h2>
+                    <div class="coleccion-descripcion">
+                        <p>Una línea que rinde homenaje a las culturas precolombinas de Colombia, con diseños inspirados en la orfebrería Quimbaya, Tayrona y Muisca. Cada pieza cuenta una historia de nuestro pasado y conecta con nuestras raíces.</p>
+                        <p>Utilizamos técnicas tradicionales como la filigrana y el repujado, combinadas con un enfoque contemporáneo para crear joyas que son verdaderas obras de arte portables.</p>
+                    </div>
+                    <a href="#" class="coleccion-btn">Ver colección completa</a>
+                </div>
+                <div class="coleccion-imagen">🏺</div>
+            </div>
+            
+            <h3 style="margin-bottom: 20px;">Productos destacados</h3>
+            <div class="productos-destacados">
+                <div class="producto-card">
+                    <div class="producto-imagen">🔱</div>
+                    <div class="producto-info">
+                        <div class="producto-nombre">Brazalete Quimbaya</div>
+                        <div class="producto-precio">$195.000</div>
+                        <a href="#" class="coleccion-btn" style="font-size: 14px; padding: 8px 15px;">Ver detalles</a>
+                    </div>
+                </div>
+                
+                <div class="producto-card">
+                    <div class="producto-imagen">🦅</div>
+                    <div class="producto-info">
+                        <div class="producto-nombre">Colgante Águila</div>
+                        <div class="producto-precio">$150.000</div>
+                        <a href="#" class="coleccion-btn" style="font-size: 14px; padding: 8px 15px;">Ver detalles</a>
+                    </div>
+                </div>
+                
+                <div class="producto-card">
+                    <div class="producto-imagen">⚱️</div>
+                    <div class="producto-info">
+                        <div class="producto-nombre">Anillo Sello Muisca</div>
+                        <div class="producto-precio">$180.000</div>
+                        <a href="#" class="coleccion-btn" style="font-size: 14px; padding: 8px 15px;">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Colección 3 -->
+        <div class="coleccion">
+            <div class="coleccion-info">
+                <div class="coleccion-texto">
+                    <h2>Colección Flora Tropical</h2>
+                    <div class="coleccion-descripcion">
+                        <p>Inspirada en la exuberante biodiversidad colombiana, esta colección celebra la belleza de nuestra flora con diseños que capturan la esencia de orquídeas, heliconias y otras flores tropicales.</p>
+                        <p>Combinamos plata, oro y piedras semipreciosas de colores vibrantes para crear piezas que evocan la riqueza natural de nuestro país, perfectas para quienes buscan un toque de color y originalidad.</p>
+                    </div>
+                    <a href="#" class="coleccion-btn">Ver colección completa</a>
+                </div>
+                <div class="coleccion-imagen">🌺</div>
+            </div>
+            
+            <h3 style="margin-bottom: 20px;">Productos destacados</h3>
+            <div class="productos-destacados">
+                <div class="producto-card">
+                    <div class="producto-imagen">🌸</div>
+                    <div class="producto-info">
+                        <div class="producto-nombre">Collar Orquídea</div>
+                        <div class="producto-precio">$210.000</div>
+                        <a href="#" class="coleccion-btn" style="font-size: 14px; padding: 8px 15px;">Ver detalles</a>
+                    </div>
+                </div>
+                
+                <div class="producto-card">
+                    <div class="producto-imagen">🍃</div>
+                    <div class="producto-info">
+                        <div class="producto-nombre">Pulsera Heliconia</div>
+                        <div class="producto-precio">$165.000</div>
+                        <a href="#" class="coleccion-btn" style="font-size: 14px; padding: 8px 15px;">Ver detalles</a>
+                    </div>
+                </div>
+                
+                <div class="producto-card">
+                    <div class="producto-imagen">🌹</div>
+                    <div class="producto-info">
+                        <div class="producto-nombre">Aretes Flor de Pasión</div>
+                        <div class="producto-precio">$140.000</div>
+                        <a href="#" class="coleccion-btn" style="font-size: 14px; padding: 8px 15px;">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ver-mas">
+            <a href="tienda.html">Ver todas nuestras joyas</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h2>Orígenes</h2>
+            <p>Bogotá, Colombia</p>
+            <p>origenes@gmail.com</p>
+            <p>+57 304 6484418</p>
+        </div>
+        <div class="footer-section">
+            <h2>Más información</h2>
+            <ul>
+                <li><a href="#">Políticas de privacidad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>Síguenos en</h2>
+            <div class="social-icons">
+                <a href="#">📘</a>
+                <a href="#">📷</a>
+                <a href="#">🔗</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Créditos -->
+    <div style="text-align: center; padding: 10px; background-color: #6d7b69; color: white;">
+        © Todos los derechos reservados 2025
+    </div>
+</body>
+</html>
