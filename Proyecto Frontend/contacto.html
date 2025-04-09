@@ -44,7 +44,9 @@
         <!-- Formulario de contacto -->
         <div class="form-box">
             <form>
-                <input type="text" placeholder="Nombre completo *" required>
+                <!-- 20250408 Ruben Eduardo Ortega Diaz:  Agregamos etiquetas <label> asociadas -->
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo *" required>
                 <input type="email" placeholder="Email *" required>
                 <input type="tel" placeholder="Teléfono *" required>
                 <textarea rows="6" placeholder="Mensaje *" required></textarea>
