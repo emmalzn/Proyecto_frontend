@@ -7,45 +7,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="top-bar">Envío gratuito en pedidos superiores a $200.000 <a href="#">Comprar ahora</a></div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-<<<<<<< HEAD
-                <li><a href="#">Colecciones</a></li>
-                <li><a href="#">Nuestra Historia</a></li>
-                <li><a href="#">Tienda</a></li>
-=======
-                <li><a href="colecciones.html">Colecciones</a></li>
-                <li><a href="NuestraHistoria.html">Nuestra Historia</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
->>>>>>> 010922f (Añadidas nuevas páginas: tienda, colecciones, nuestra historia y contacto actualizado)
-                <li><a href="#">Contacto</a></li>
-                <li class="icon"><a href="#">👤</a></li>
+    <div class="top-bar">
+        Envío gratuito en pedidos superiores a $200.000 <a href="#">Comprar ahora</a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          
+          <li class="dropdown">
+            <a href="#">☰</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Últimas novedades</a></li>
+              <li><a href="#">Ediciones limitadas</a></li>
+              <li><a href="#">Collares y dijes</a></li>
+              <li><a href="#">Pulseras y brazaletes</a></li>
+              <li><a href="#">Vintage y Romántica</a></li>
+              <li><a href="#">Compromiso y bodas</a></li>
+              <li><a href="#">Autoregalo perfecto</a></li>
             </ul>
-        </nav>
-    </header>
+          </li>
+      
+          
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="colecciones.html">Colecciones</a></li>
+          <li><a href="NuestraHistoria.html">Nuestra Historia</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li class="icon"><a href="login.html">👤</a></li>
+        </ul>
+      </nav>
+
     <main>
         <section class="hero">
-            <div class="menu">
-                <ul>
-                    <li>Últimas novedades</li>
-                    <li>Ediciones limitadas</li>
-                    <li>Collares y dijes</li>
-                    <li>Pulseras y brazaletes</li>
-                    <li>Vintage y Romántica</li>
-                    <li>Compromiso y bodas</li>
-                    <li>Autoregalo perfecto</li>
-                </ul>
-            </div>
             <div class="hero-content">
                 <h1>Colección Esmeralda Exclusiva</h1>
                 <p>Diseños inspirados en nuestra herencia colombiana. Cada joya cuenta una historia.</p>
                 <button>Compra ahora!</button>
             </div>
             <div class="hero-image">
-                <img src="image.png" alt="Colección Esmeralda">
+                <img src="assets/imag2.jpg" alt="Colección Esmeralda">
             </div>
         </section>
         <section class="flash-sales">
@@ -53,10 +52,10 @@
             <div class="countdown">Días 03 : Horas 23 : Minutos 19 : Segundos 56</div>
             <div class="products">
                 <!-- 20250408 Ruben Eduardo Ortega Diaz: Agregamos un atributo alt descriptivo a cada imagen de producto en la sección flash-sales -->
-                <div class="product">-40% <img src="producto1.png" alt="Descripción imagen -40%"></div>
-                <div class="product">-35% <img src="producto2.png" alt="Descripción imagen -35%"></div>
-                <div class="product">-30% <img src="producto3.png" alt="Descripción imagen -30%"></div>
-                <div class="product">-25% <img src="producto4.png" alt="Descripción imagen -25%"></div>
+                <div class="product">-40% <img src="assets/producto1.png" alt="Descripción imagen -40%"></div>
+                <div class="product">-35% <img src="assets/producto2.png" alt="Descripción imagen -35%"></div>
+                <div class="product">-30% <img src="assets/producto3.png" alt="Descripción imagen -30%"></div>
+                <div class="product">-25% <img src="assets/producto4.png" alt="Descripción imagen -25%"></div>
             </div>
         </section>
     </main>
@@ -84,5 +83,10 @@
             </div>
         </div>
     </footer>
+    <script>
+        function toggleMenu() {
+            document.getElementById('side-menu').classList.toggle('open');
+        }
+        </script>
 </body>
 </html>

@@ -6,7 +6,8 @@ body {
 }
 
 .top-bar {
-    background-color: #9da48f;
+    background-color: #6D826F;
+    
     text-align: center;
     padding: 10px;
     color: white;
@@ -25,13 +26,62 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-.navbar ul {
-    list-style: none;
+.navbar {
+    background-color: #fdfaf4;
+    padding: 15px;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .navbar ul {
+    list-style: none;
     padding: 0;
     margin: 0;
-}
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar ul li {
+    position: relative;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  /* Estilo del submenú */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fdfaf4;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    min-width: 200px;
+    z-index: 1000;
+    flex-direction: column;
+  }
+  
+  .dropdown-menu li {
+    border-bottom: 1px solid #eee;
+  }
+  
+  .dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+  }
+  
+  /* Mostrar submenú al hacer hover sobre el li.dropdown */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
 
 .navbar a {
     text-decoration: none;
@@ -60,6 +110,19 @@ body {
     padding: 10px 0;
 }
 
+.hero {
+    display: flex;
+    padding: 40px;
+    background-color: #d3d8c5;
+    align-items: center;
+    min-height: 400px;
+  }
+  
+  .hero-text {
+    flex: 1; 
+    padding-right: 40px;
+  }
+
 .hero-content {
     flex: 2;
     padding: 20px;
@@ -78,8 +141,35 @@ body {
 }
 
 .hero-image {
-    flex: 1;
-}
+    flex: 1.5; 
+    max-width: 60%; 
+  }
+  
+  .hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-text {
+      padding-right: 0;
+      margin-bottom: 30px;
+    }
+  
+    .hero-image {
+      max-width: 80%;
+      flex: 1; 
+    }
+  }
+
 
 .flash-sales {
     text-align: center;
@@ -102,7 +192,7 @@ body {
 }
 
 .footer {
-    background-color: #6d7b69;
+    background-color: #6D826F;
     color: white;
     padding: 20px;
     display: flex;
@@ -148,15 +238,22 @@ body {
     padding: 50px;
 }
 
+
+
 .login-form {
     padding: 30px;
     background-color: #fff9ed;
-    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-}
+    width: 700px; 
+    max-width: 100%;
+  }
+
+.login-form label {
+    display: block; 
+    margin-bottom: 5px;
+  }
 
 .login-form h2 {
     font-size: 24px;
@@ -167,7 +264,10 @@ body {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-}
+    width: 30%; 
+    box-sizing: border-box;
+  }
+
 
 .login-form button {
     background-color: #e47d5d;
@@ -176,7 +276,11 @@ body {
     border: none;
     cursor: pointer;
     margin-top: 10px;
-}
+    width: 20%; 
+    box-sizing: border-box;
+    display: block; 
+    margin-bottom: 5px;
+  }
 
 .login-form a {
     color: #e47d5d;
@@ -231,6 +335,47 @@ body {
     border-radius: 5px;
 }
 
+.login-image img {
+    width: 500px;
+    height: auto;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .login-image img {
+      width: 100%; 
+      height: auto;
+    }
+  }
+
+  .coleccion-imagen img{
+    width: 300px;
+    height: auto;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .coleccion-imagen img {
+      width: 800%; 
+      height: auto;
+    }
+  }
+
+  
+
+.product img {
+    width: 150px;
+    height: auto;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .product img {
+      width: 800%; 
+      height: auto;
+    }
+  }
+
 /* Responsive */
 @media screen and (max-width: 768px) {
     .navbar ul {
@@ -254,4 +399,6 @@ body {
         flex-direction: column;
         align-items: center;
     }
+   
+
 }
